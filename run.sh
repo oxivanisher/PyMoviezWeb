@@ -16,9 +16,9 @@ cd ${DIR}
 if [ -z "$PYMOVIEZ_CFG" ]; then
 	if [ -f "dist/pymoviez.cfg" ]; then
 		echo "Setting PYMOVIEZ_CFG for you. Please use your own settings for production!"
-		export PYMOVIEZ_CFG="dist/pymoviez.cfg"
+		export PYMOVIEZ_CFG="../dist/pymoviez.cfg"
 	else
-		export PYMOVIEZ_CFG="dist/pymoviez.cfg.example"
+		export PYMOVIEZ_CFG="../dist/pymoviez.cfg.example"
 	fi
 fi
 

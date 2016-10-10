@@ -1,8 +1,29 @@
+# base settings
 DEBUG = True
-OUTPUTDIR = "output"
+APPSECRET = 'some key'
 USERNAME = "admin"
 PASSWORD = "changeme"
-EMAILTARGET = ['yourname@example.com']
-EMAILSERVER = "127.0.0.1"
-EMAILFROM = "yourname@example.com"
 UPLOAD_FOLDER = "/tmp"
+
+COMPRESS_DEBUG = True
+COMPRESS_MIMETYPES = ['text/html', 'text/css', 'text/xml', 'application/json', 'application/javascript', 'text/javascript']
+FAVICON = "favicon.ico"
+
+# email
+EMAILSERVER = "mail.oxi.ch"
+EMAILFROM = "Wunschliste Urben <wish@oxi.ch>"
+EMAILREPLYTO = "Wunschliste Urben <wish@oxi.ch>"
+EMAILLOGIN = "transfer@thunderbluff.ch"
+EMAILPASSWORD = "uxeiZ8oo"
+
+# database
+SQLALCHEMY_DATABASE_URI = 'sqlite:////home/oxi/ownCloud/tmp/pymoviezweb.db'
+#with mysql: SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/pymoviezweb?charset=utf8'
+SQLALCHEMY_POOL_RECYCLE = 1800
+SQLALCHEMY_COMMIT_ON_TEARDOWN = True
+
+# available languages
+LANGUAGES = {
+    'en': 'English',
+    'de': 'Deutsch'
+}
