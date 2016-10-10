@@ -1,8 +1,8 @@
 *.swp
 nbproject/*
 *.sublime-*
-output/*
-!output/.keep
+pymoviezweb/static/output/*
+!pymoviezweb/static/output/.keep
 *.zip
 wsgilog.log*
 pymoviez.cfg
