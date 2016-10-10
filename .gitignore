@@ -4,9 +4,7 @@ nbproject/*
 pymoviezweb/static/output/*
 !pymoviezweb/static/output/.keep
 *.zip
-wsgilog.log*
 pymoviez.cfg
-pymoviezweb.db
 log/pymoviezweb.log
 
 *.py[cod]
